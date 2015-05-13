@@ -89,4 +89,5 @@ post '/topic/:tid/post/create' do
   p.topic = t
   p.user = u
   p.save
+  redirect '/topic/' + t.id.to_s
 end
