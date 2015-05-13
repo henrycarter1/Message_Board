@@ -1,0 +1,10 @@
+<h1 align="center">Registered Users</h1>
+
+<table align="center">
+  <% @users.each do |user| %>
+    <tr>
+      <td style="font-size: 125%"><u><%= user.username %></u></td>
+    </tr>
+    <br>
+  <% end %>
+</table>

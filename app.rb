@@ -91,3 +91,9 @@ post '/topic/:tid/post/create' do
   p.save
   redirect '/topic/' + t.id.to_s
 end
+
+get '/userlist' do
+  @users = User.all
+
+  erb :userlist
+end
